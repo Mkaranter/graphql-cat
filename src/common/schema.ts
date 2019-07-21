@@ -2,14 +2,16 @@ import { buildSchema } from 'graphql';
 
 export const schema = buildSchema(`
   type Query {
-    hello: String
-    random: Float!
-    plusTwo(number: Int): Int,
-    cat(id: Int): Cat
+    hello: String,
+    randomNumber: Float!,
+    numberPlusTwo(number: Int): Int,
+    catById(id: Int): Cat,
+    catsByLegs(legs: Int): [Cat],
   }
 
   type Cat {
-    id: Int
-    name: String
+    id: Int!,
+    name: String!,
+    legs: Int!,
   }
 `);

@@ -1,6 +1,5 @@
 import { PlusTwo } from '../common/models';
 
-export const numbers = {
-	random: () => Math.random(),
-	plusTwo: ({ number }: PlusTwo): number => number + 2
-};
+export const numberPlusTwo = ({ number }: PlusTwo): number => number + 2;
+
+export const randomNumber = () => Math.random();

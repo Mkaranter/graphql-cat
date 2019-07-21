@@ -1,1 +1,6 @@
-{ "cats": [{ "id": 0, "name": "Stefan" }, { "id": 1, "name": "Roman" }] }
+{
+	"cats": [
+		{ "id": 0, "name": "Stefan", "legs": 4 },
+		{ "id": 1, "name": "Roman", "legs": 4 }
+	]
+}
