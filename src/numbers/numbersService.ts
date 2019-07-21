@@ -1,6 +1,4 @@
-export interface PlusTwo {
-	number: number;
-}
+import { PlusTwo } from '../common/models';
 
 export const numbers = {
 	random: () => Math.random(),

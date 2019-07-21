@@ -2,13 +2,16 @@ import express from 'express';
 import graphqlHTTP from 'express-graphql';
 
 import { hello } from './hello/helloService';
-import { numbers, PlusTwo } from './numbers/numbersService';
+import { numbers } from './numbers/numbersService';
+import { getCat } from './cats/catsService';
 
 import { schema } from './common/schema';
+import { Cat, PlusTwo } from './common/models';
 
 // The root provides a resolver function for each API endpoint
 const root = {
 	hello,
+	cat: (id: Cat) => getCat(id),
 	random: numbers.random,
 	plusTwo: (number: PlusTwo) => numbers.plusTwo(number)
 };
