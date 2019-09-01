@@ -28,6 +28,7 @@
 	},
 	"scripts": {
 		"start:dev": "npm run build:dev",
+		"start:heroku": "node 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql",
 		"build:dev": "nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql"
 	}
 }
