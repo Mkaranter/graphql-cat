@@ -32,8 +32,5 @@
 		"build-ts": "tsc",
 		"postinstall": "npm run build-ts",
 		"start": "npm run serve"
-	},
-	"engines": {
-		"node": "10.16.3"
 	}
 }
