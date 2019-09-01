@@ -27,8 +27,8 @@
 		"@types/express-graphql": "^0.8.0"
 	},
 	"scripts": {
-		"start": "npm run build:dev",
 		"start:dev": "npm run build:dev",
-		"build:dev": "nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql"
+		"build:dev": "nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,graphql",
+		"heroku-postbuild": "start:dev"
 	}
 }
