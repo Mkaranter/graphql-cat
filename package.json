@@ -14,7 +14,6 @@
 	},
 	"homepage": "https://github.com/Mkaranter/graphql-cat#readme",
 	"dependencies": {
-		"esm": "^3.2.25",
 		"express": "^4.17.1",
 		"express-graphql": "^0.8.0",
 		"graphql": "^14.4.2"
@@ -33,5 +32,8 @@
 		"build-ts": "tsc",
 		"postinstall": "npm run build-ts",
 		"start": "npm run serve"
+	},
+	"engines": {
+		"node": "10.16.3"
 	}
 }
