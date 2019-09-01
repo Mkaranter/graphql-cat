@@ -7,6 +7,8 @@ import { catById, catsByLegs } from './cats/catsService';
 
 import { schema } from './common/schema';
 
+const PORT = process.env.PORT || 4000;
+
 const root = {
 	hello,
 	catById,
@@ -25,5 +27,4 @@ app.use(
 	})
 );
 
-app.listen(4000);
-console.log('Running a GraphQL API server at localhost:4000/graphql');
+app.listen(PORT, () => `Running a GraphQL API at port ${PORT}`);
